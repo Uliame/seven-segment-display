@@ -69,5 +69,3 @@ def exibir_relogio():
         time.sleep(1)
 
 exibir_relogio()
-
-# tem alguma forma que eu consiga atualizar a tela apenas quando tiver uma atualização no horário? pois acho que a tela está sendo limpa e atualizada fora de sincronia com a mudança dos segundos

@@ -15,7 +15,7 @@ segmentos = {
     9: [1, 1, 1, 1, 0, 1, 1],
 }
 
-def exibir_numero(num):
+def exibirNumero(num):
     if num not in segmentos:
         return ["     ", "     ", "     ", "     ", "     "]
 
@@ -31,7 +31,7 @@ def exibir_numero(num):
     
     return linhas
 
-def exibir_relogio():
+def exibirRelogio():
     while True:
         agora = datetime.now()
         hora, minuto, segundo = agora.hour, agora.minute, agora.second
@@ -40,12 +40,12 @@ def exibir_relogio():
         m1, m2 = divmod(minuto, 10)
         s1, s2 = divmod(segundo, 10)
 
-        linhas_h1 = exibir_numero(h1)
-        linhas_h2 = exibir_numero(h2)
-        linhas_m1 = exibir_numero(m1)
-        linhas_m2 = exibir_numero(m2)
-        linhas_s1 = exibir_numero(s1)
-        linhas_s2 = exibir_numero(s2)
+        linhas_h1 = exibirNumero(h1)
+        linhas_h2 = exibirNumero(h2)
+        linhas_m1 = exibirNumero(m1)
+        linhas_m2 = exibirNumero(m2)
+        linhas_s1 = exibirNumero(s1)
+        linhas_s2 = exibirNumero(s2)
 
         os.system("cls" if os.name == "nt" else "clear")
 
@@ -68,4 +68,4 @@ def exibir_relogio():
 
         time.sleep(1)
 
-exibir_relogio()
+exibirRelogio()

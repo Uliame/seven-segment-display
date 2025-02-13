@@ -33,19 +33,19 @@ def exibirNumero(num):
 
 def exibirRelogio():
     while True:
-        agora = datetime.now()
-        hora, minuto, segundo = agora.hour, agora.minute, agora.second
+        now = datetime.now()
+        hora, minuto, segundo = now.hour, now.minute, now.second
 
         h1, h2 = divmod(hora, 10)
         m1, m2 = divmod(minuto, 10)
         s1, s2 = divmod(segundo, 10)
 
-        linhas_h1 = exibirNumero(h1)
-        linhas_h2 = exibirNumero(h2)
-        linhas_m1 = exibirNumero(m1)
-        linhas_m2 = exibirNumero(m2)
-        linhas_s1 = exibirNumero(s1)
-        linhas_s2 = exibirNumero(s2)
+        linhasH1 = exibirNumero(h1)
+        linhasH2 = exibirNumero(h2)
+        linhasM1 = exibirNumero(m1)
+        linhasM2 = exibirNumero(m2)
+        linhasS1 = exibirNumero(s1)
+        linhasS2 = exibirNumero(s2)
 
         os.system("cls" if os.name == "nt" else "clear")
 
@@ -58,9 +58,9 @@ def exibirRelogio():
             separador2 = " : " if i == 2 else "   " 
 
             linha = (
-                "    " + linhas_h1[i] + " " + linhas_h2[i] + separador1 +
-                linhas_m1[i] + " " + linhas_m2[i] + separador2 +
-                linhas_s1[i] + " " + linhas_s2[i] + "    "
+                "    " + linhasH1[i] + " " + linhasH2[i] + separador1 +
+                linhasM1[i] + " " + linhasM2[i] + separador2 +
+                linhasS1[i] + " " + linhasS2[i] + "    "
             )
             print(f"║{linha}║")  
 

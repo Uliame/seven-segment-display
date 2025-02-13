@@ -18,7 +18,7 @@ Minha motivação para esse projeto foi apenas ter mais contato com a linguagem.
 
 ## Próximos Passos 
 
-- Fazer o mesmo projeto, porém com uma interface gráfica usando o Tkinter.
+- Fazer o mesmo projeto, porém com uma interface gráfica e adicionando algumas novas funcionalidades
 
 <br>
 
